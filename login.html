@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Vatika-Login</title>
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
+    <!-- Bootstrap 5 CDN Links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/login.css">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="nav-bar">
+            <a href="index.html" class="logo">
+                <h2 class="brand-title"><img src="images/logo.png" style="float:left" ;> </h2>
+            </a>
+            <div class="navigation">
+                <div class="nav-items">
+                    <i class="uil uil-times nav-close-btn"></i>
+                    <a href="index.html"><i class="uil uil-home"></i> Home</a>
+                    <a href="rooms.html"><i class="uil uil-bed"></i>Rooms</a>
+                    <a href="aabout.html"><i class="uil uil-info-circle"></i> About</a>
+
+                    <a href="login.html"><i class="uil uil-inbox"></i> Login</a>
+                    <a href="Cafe.html"><i class="uil uil-coffee"></i> Cafe</a>
+                    <a href="contact.html"><i class="uil uil-phone"></i> Contact</a>
+                </div>
+            </div>
+            <i class="uil uil-apps nav-menu-btn"></i>
+        </div>
+    </header>
+
+
+
+
+    <!--Login-->
+
+    <div class="containerr">
+        <form class="form" id="login">
+            <h1 class="form__title">Login</h1>
+            <div  class="form__message form__message--error"></div>
+            <div class="form__input-group">
+                <input type="text" class="form__input" autofocus placeholder="Username or email">
+                <div  class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <input type="password" class="form__input" autofocus placeholder="Password">
+                <div class="form__input-error-message"></div>
+            </div>
+            <button data-aos="fade-up" data-aos-duration="1000" class="form__button" type="submit">Continue</button>
+            <p class="form__text" data-aos="fade-up" data-aos-duration="2000">
+                <a href="#" class="form__link">Forgot your password?</a>
+            </p>
+            <p class="form__text" data-aos="fade-up" data-aos-duration="3000">
+                <a class="form__link" href="./" id="linkCreateAccount">Don't have an account? Create account</a>
+            </p>
+        </form>
+        <form class="form form--hidden" id="createAccount">
+            <h1 class="form__title">Create Account</h1>
+            <div class="form__message form__message--error"></div>
+            <div class="form__input-group">
+                <input type="text" id="signupUsername" class="form__input" autofocus placeholder="Username">
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <input type="text" class="form__input" autofocus placeholder="Email Address">
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <input type="password" class="form__input" autofocus placeholder="Password">
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <input type="password" class="form__input" autofocus placeholder="Confirm password">
+                <div class="form__input-error-message"></div>
+            </div>
+           
+                <button  class="form__button" type="submit">Continue</button>
+          
+            <p class="form__text">
+                <a class="form__link" href="./" id="linkLogin">Already have an account? Sign in</a>
+            </p>
+        </form>
+    </div>
+
+    <!--Login Ends-->
+    <!-- Footer section -->
+    <section id="contact" class="footer_wrapper mt-3 mt-md-0 pb-0">
+        <div class="container pb-3">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <h5>Hotel Location</h5>
+                    <p class="ps-0">
+                        Vatika Palace is situated in Udaipur, India. <br /> Palace is also started in California, USA.
+                    </p>
+                    <div class="contact-info">
+                        <ul class="list-unstyled">
+                            <li><a href="#"><i class="fa fa-home me-3"></i>Savi-Lake Sector 1, Udaipur , India</a></li>
+                            <li><a href="tel:(+91) 234-567-8901"><i class="fa fa-phone me-3"></i>(+91) 234-567-8901</a></li>
+                            <li><a href="#"><i class="fa fa-envelope me-3"></i>info@example.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Useful Links</h5>
+                    <ul class="link-widget p-0">
+                        <li><a href="aabout.html">About Us</a></li>
+                        <li><a href="cafe.html">Cafe</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Our Locations</a></li>
+                        <li><a href="rooms.html">Book Roms</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Rewards</h5>
+                    <ul class="link-widget p-0">
+
+                        <li><a href="#">Guarantee</a></li>
+                        <li><a href="#">Buy Gift Card</a></li>
+                        <li><a href="#">Subscribe</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Newsletter</h5>
+                    <div class="form-group mb-4">
+                        <input type="email" class="form-control bg-transparent" placeholder="enter your email here">
+                        <button type="submit" class="main-btn rounded-2 mt-3 border-white text-white">Subscribe</button>
+                    </div>
+                    <h5>Stay Connected</h5>
+                    <ul class="social-network d-flex align-items-center p-0">
+                        <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.google.com/"><i class="fab fa-google-plus-g"></i></a></li>
+                       
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Footer section exit -->
+    <!-- Footer section exit -->
+    <!-- Bootstrap 5 JS CDN Links -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Custom Js Link -->
+    <script src="js/indexx.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+
+    <script>
+        function setFormMessage(formElement, type, message) {
+            const messageElement = formElement.querySelector(".form__message");
+
+            messageElement.textContent = message;
+            messageElement.classList.remove("form__message--success", "form__message--error");
+            messageElement.classList.add(`form__message--${type}`);
+        }
+
+        function setInputError(inputElement, message) {
+            inputElement.classList.add("form__input--error");
+            inputElement.parentElement.querySelector(".form__input-error-message").textContent = message;
+        }
+
+        function clearInputError(inputElement) {
+            inputElement.classList.remove("form__input--error");
+            inputElement.parentElement.querySelector(".form__input-error-message").textContent = "";
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const loginForm = document.querySelector("#login");
+            const createAccountForm = document.querySelector("#createAccount");
+
+            document.querySelector("#linkCreateAccount").addEventListener("click", e => {
+                e.preventDefault();
+                loginForm.classList.add("form--hidden");
+                createAccountForm.classList.remove("form--hidden");
+            });
+
+            document.querySelector("#linkLogin").addEventListener("click", e => {
+                e.preventDefault();
+                loginForm.classList.remove("form--hidden");
+                createAccountForm.classList.add("form--hidden");
+            });
+
+            loginForm.addEventListener("submit", e => {
+                e.preventDefault();
+
+                // Perform your AJAX/Fetch login
+
+                setFormMessage(loginForm, "error", "Invalid username/password combination");
+            });
+
+            document.querySelectorAll(".form__input").forEach(inputElement => {
+                inputElement.addEventListener("blur", e => {
+                    if (e.target.id === "signupUsername" && e.target.value.length > 0 && e.target.value.length < 10) {
+                        setInputError(inputElement, "Username must be at least 10 characters in length");
+                    }
+                });
+
+                inputElement.addEventListener("input", e => {
+                    clearInputError(inputElement);
+                });
+            });
+        });
+    </script>
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+</html>
